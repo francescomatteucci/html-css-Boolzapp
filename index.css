@@ -7,7 +7,7 @@
 }
 
 img {
-    max-width: 100%;
+    max-width: 40px;
 }
 
 a {
@@ -28,48 +28,78 @@ ol {
 
 body {
     font-family: 'lato';
+   
 }
 
 /* DEBUG */
 
-.container,
-.row
-{
-    border:2px solid black;
-
-}
 
 [class^="col"] {
-    border:2px solid black;
+    border: 2px solid black;
+}
+
+.container{
+    background-color: red;
 }
 
 /* LAYOUT */
 
-#app{
-    height:100vh;
+#app {
+    height: 100vh;
 }
 
-.row{
+.container{
     display:flex;
 }
 
-.col-mb{
-    width:calc(12 * 100% / 12);
-    
+.row {
+    display: flex;
 }
 
+.aside{
+    display:none;
+    background-color: blue;
+    overflow-y: auto;
+}
 
-
-.col{
+.main{
+    display:flex;
+    background-color: blanchedalmond;
     width:100%;
+    flex-direction: column;
+    overflow:hidden;
 }
 
-.col-aside-md{
-    display:none;
+.recipient-profile{
+    display:flex;
+    height:60px;
 }
 
-.col-main-md{
-    display:none;
+.profile{
+    display:flex;
+    overflow:hidden;
+
+}
+
+.icons{
+    display:flex;
+    margin-left: auto;
+    overflow:hidden;
+}
+
+.text-area{
+    display:flex;
+    border: 1px solid black;
+    height:calc(100vh - 120px);
+    background-image: url(./img/mine.jpg);
+    overflow-y: auto;
+}
+
+.hotbar-area{
+    display:flex;
+    border: 1px solid black;
+    height:60px;
+    
 }
 
 
@@ -82,24 +112,21 @@ body {
 /* MD BP 768 px */
 
 @media (min-width : 768px) {
-    
-    .col{
-        display:none;
+
+
+    .aside {
+        display: flex;
+        width: 100px;
+        border: 2px solid black;
+
+
     }
 
-    .col-aside-md {
-        display:flex;
-        width: 100px;
-        border:2px solid black;
-        
-    
-    }
-    
-    .col-main-md {
-        display:flex;
+    .main-md {
+        display: flex;
         width: calc(100% - 100px);
-        border:2px solid black;
-        
+        border: 2px solid black;
+
     }
 }
 
@@ -109,18 +136,18 @@ body {
 @media (min-width:1200px) {
 
 
-    .container{
-        width:70%;
+    .container {
+        width: 70%;
         margin: 0 auto;
     }
 
-    .col-aside-xl{
-        display:flex;
-        width:300px;
+    .aside {
+        display: flex;
+        width: 300px;
     }
 
-    .col-main-xl{
-        display:flex;
-        width:calc(100% - 300px);
+    .main-xl {
+        display: flex;
+        width: calc(100% - 300px);
     }
 }
