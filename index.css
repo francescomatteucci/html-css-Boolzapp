@@ -1,0 +1,126 @@
+/* UTILITES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+menu,
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    font-family: 'lato';
+}
+
+/* DEBUG */
+
+.container,
+.row
+{
+    border:2px solid black;
+
+}
+
+[class^="col"] {
+    border:2px solid black;
+}
+
+/* LAYOUT */
+
+#app{
+    height:100vh;
+}
+
+.row{
+    display:flex;
+}
+
+.col-mb{
+    width:calc(12 * 100% / 12);
+    
+}
+
+
+
+.col{
+    width:100%;
+}
+
+.col-aside-md{
+    display:none;
+}
+
+.col-main-md{
+    display:none;
+}
+
+
+
+/* ***************************************** */
+/* MEDIA QUERY */
+/* ***************************************** */
+
+
+/* MD BP 768 px */
+
+@media (min-width : 768px) {
+    
+    .col{
+        display:none;
+    }
+
+    .col-aside-md {
+        display:flex;
+        width: 100px;
+        border:2px solid black;
+        
+    
+    }
+    
+    .col-main-md {
+        display:flex;
+        width: calc(100% - 100px);
+        border:2px solid black;
+        
+    }
+}
+
+
+/* XL BP 1200 px */
+
+@media (min-width:1200px) {
+
+
+    .container{
+        width:70%;
+        margin: 0 auto;
+    }
+
+    .col-aside-xl{
+        display:flex;
+        width:300px;
+    }
+
+    .col-main-xl{
+        display:flex;
+        width:calc(100% - 300px);
+    }
+}
