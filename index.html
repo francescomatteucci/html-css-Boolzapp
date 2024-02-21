@@ -16,23 +16,156 @@
     <body>
         <div id="app">
             <div class="container">
-                <div class="aside">w</div>
-                <div class="main">
-                    <div class="recipient-profile">
-                        <div class="profile">Profile</div>
-                        <div class="icons">Icons</div>
+                <div class="aside">
+                    <div class="recipient-profile bg-white">
+                        <div class="profile">
+                            <div class="image-circle"> <img
+                                    src="./img/avatar_1.jpg" alt> </div>
+
+                        </div>
+                        <div class="icons">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-paperclip"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                     </div>
 
-                    <div class="text-area">text</div>
-                    <div class="hotbar-area">write message..</div>
+                    <div class="bell-profile">
+                        <div class="profile">
+                            <div class="image-circle"> <i
+                                    class="fa-solid fa-bell-slash"></i> </div>
+                            <div class="profile-info">
+                                <strong>Ricevi notifiche di nuovi
+                                    messaggi</strong>
+                                <span class="underline-text">Attiva notifiche
+                                    desktop</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="search-bar">
+						<input
+							type="text"
+							name="search"
+							placeholder="Cerca o inizia una nuova chat"
+						/>
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
 
+                    <ul class="contacts">
+						<li class="contact toast">
+							<div class="contact-profile toast-content">
+								<img class="contact__image" src="./img/avatar_1.jpg" alt="" />
+								<div class="d-none d-lg-block">
+									<h3 class="contact-name">Michele</h3>
+									<p class="last-access">Lorem ipsum dolor sit.</p>
+								</div>
+							</div>
+							<span class="time d-none d-lg-block"> 16:15 </span>
+						</li>
+						<li class="contact toast">
+							<div class="contact-profile toast-content">
+								<img class="contact__image" src="./img/avatar_5.jpg" alt="" />
+								<div class="d-none d-lg-block">
+									<h3 class="contact-name">Pippo</h3>
+									<p class="last-access">Lorem ipsum dolor sit.</p>
+								</div>
+							</div>
+							<span class="time d-none d-lg-block"> 16:15 </span>
+						</li>
+						<li class="contact toast">
+							<div class="contact-profile toast-content">
+								<img class="contact__image" src="./img/avatar_2.jpg" alt="" />
+								<div class="d-none d-lg-block">
+									<h3 class="contact-name">Gianni</h3>
+									<p class="last-access">Lorem ipsum dolor sit.</p>
+								</div>
+							</div>
+							<span class="time d-none d-lg-block"> 16:15 </span>
+						</li>
+						<li class="contact toast">
+							<div class="contact-profile toast-content">
+								<img class="contact__image" src="./img/avatar_3.jpg" alt="" />
+								<div class="d-none d-lg-block">
+									<h3 class="contact-name">Sara</h3>
+									<p class="last-access">Lorem ipsum dolor sit.</p>
+								</div>
+							</div>
+							<span class="time d-none d-lg-block"> 16:15 </span>
+						</li>
+					</ul>
 
                 </div>
+                <div class="main">
+                    <div class="recipient-profile">
+                        <div class="profile">
+                            <div class="image-circle"> <img
+                                    src="./img/avatar_1.jpg" alt> </div>
+                            <div class="profile-info">
+                                <strong>Michele</strong>
+                                <span>Ultimo accesso oggi alle 16:26</span>
+                            </div>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-paperclip"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
 
+                    <div class="text-area">
+                        <div class="text-container">
+                            <div class="recipient-text-message">
+                                <div class="text-message">Lorem ipsum dolor sit,
+                                    amet consectetur adipisicing elit. Est
+                                    voluptatibus quibusdam amet dolores corrupti
+                                    expedita neque, esse sit libero, rerum,
+                                    earum quis natus omnis vel beatae. Eaque
+                                    explicabo necessitatibus repellat.</div>
+                                <div class="aside-message">
+                                    <select name="menu" id>
+                                        <option value></option>
+                                        <option value>Copia Messaggio</option>
+                                        <option value>Inoltra Messaggio</option>
+                                        <option value>Rispondi al
+                                            messaggio</option>
+                                        <option value>Aggiungi ai
+                                            preferiti</option>
+                                    </select>
+                                    <span>16:13</span>
+                                </div>
+                            </div>
+
+                            <div class="sender-text-message">
+                                <div class="text-message">Lorem ipsum dolor sit,
+                                    amet consectetur adipisicing elit. Est
+                                    voluptatibus quibusdam amet dolores corrupti
+                                    expedita neque, esse sit libero, rerum,
+                                    earum quis natus omnis vel beatae. Eaque
+                                    explicabo necessitatibus repellat.</div>
+                                <div class="aside-message">
+                                    <select name="menu" id>
+                                        <option value></option>
+                                        <option value>Copia Messaggio</option>
+                                        <option value>Inoltra Messaggio</option>
+                                        <option value>Rispondi al
+                                            messaggio</option>
+                                        <option value>Aggiungi ai
+                                            preferiti</option>
+                                    </select>
+                                    <span>16:13</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="hotbar-area">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <div class="message-text">Scrivi un messaggio</div>
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </div>
             </div>
-
         </div>
-
     </body>
 </html>
